@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhotoLens — Support</title>
+    <meta name="description" content="Help and support for PhotoLens, the photo library and backup app for your own NAS, on iPhone, iPad and Apple TV.">
+    <link rel="icon" href="app-icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img class="app-icon" src="app-icon.png" alt="PhotoLens app icon" width="88" height="88">
+            <h1>PhotoLens</h1>
+            <p class="subtitle">Support &amp; Help</p>
+        </div>
+    </header>
+
+    <nav>
+        <a href="index.html" class="active">Support</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="sv.html" lang="sv">Svenska</a>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="section">
+                <h2>Get in touch</h2>
+                <p>Something not working, or a question about the app? Write to us and say which device you use (iPhone, iPad or Apple TV), its system version, and what kind of NAS you have.</p>
+                <a href="mailto:thorsursus@icloud.com?subject=PhotoLens%20support" class="contact-link">thorsursus@icloud.com</a>
+                <p style="margin-top: 14px;">You can also open an issue at <a href="https://github.com/thorsursus/photolens-support/issues">github.com/thorsursus/photolens-support</a>.</p>
+            </div>
+
+            <div class="section">
+                <h2>About PhotoLens</h2>
+                <p>PhotoLens shows the photo library on your own NAS on iPhone, iPad and Apple TV, and backs up the photos and videos on your iPhone or iPad to that NAS. Your photos are stored as ordinary files in dated folders on a share you control. There is no PhotoLens account, no subscription and no server of ours in between.</p>
+                <p>You can look around first without a NAS: tap <strong>Explore Demo Library</strong> on the welcome screen to open a sample library that is stored on the device.</p>
+            </div>
+
+            <div class="section">
+                <h2>What you need</h2>
+                <ul>
+                    <li>A NAS (or a computer) that shares a folder over <strong>SMB 3</strong>, with a user name and password that can read and write the share.</li>
+                    <li>An iPhone or iPad with iOS 17 or later, or an Apple TV with tvOS 17 or later.</li>
+                    <li>The device on the same network as the NAS. To reach the NAS away from home, use a VPN to your home network, for example Tailscale, and connect to the NAS's address on the VPN.</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Getting started</h2>
+
+                <details>
+                    <summary>How do I try the app without a NAS?</summary>
+                    <p>On the welcome screen, choose <strong>Explore Demo Library</strong>. On iPhone and iPad it is also under Settings › Connection, and on Apple TV under Settings › Connection. The demo library holds generated sample photos, a short video and two Live Photos, stored on the device. Nothing is sent anywhere. Choose <strong>Leave Demo Library</strong> in Settings to go back.</p>
+                </details>
+
+                <details>
+                    <summary>How do I connect to my NAS?</summary>
+                    <p>Tap <strong>Connect Your NAS</strong> and fill in:</p>
+                    <ul>
+                        <li><strong>Address</strong>: the NAS's IP address, for example <code>192.168.1.20</code> at home, or its VPN address.</li>
+                        <li><strong>Share</strong>: the name of the shared folder, exactly as it is spelled on the NAS.</li>
+                        <li><strong>Username</strong> and <strong>Password</strong>: an account on the NAS that may read and write the share.</li>
+                    </ul>
+                    <p>The first time, iOS asks for permission to find devices on your local network. PhotoLens needs it to reach the NAS.</p>
+                </details>
+
+                <details>
+                    <summary>How do I set up Apple TV?</summary>
+                    <p>If PhotoLens on your iPhone or iPad is already connected, and the Apple TV uses the same Apple Account with iCloud, the Apple TV connects by itself a few seconds after you open the app. Otherwise choose <strong>Set Up Manually</strong> and enter the address, share, user name and password with the remote.</p>
+                </details>
+
+                <details>
+                    <summary>How does backup from my iPhone work?</summary>
+                    <p>Open the <strong>Backup</strong> tab and choose what to back up. PhotoLens copies the original photos and videos, Live Photos included, from the Photos library on the device to folders on the NAS named by date (<code>year/month/day</code>). New photos are copied when you open the app, and iOS also lets the app continue in the background from time to time.</p>
+                    <p>Backup goes one way. PhotoLens never changes or deletes anything in the Photos app, and deleting a photo on the iPhone does not delete it from the NAS.</p>
+                </details>
+
+                <details>
+                    <summary>How are my photos stored on the NAS?</summary>
+                    <p>As the original files, in folders by date. Next to them PhotoLens keeps a hidden <code>.thumbs</code> folder with thumbnails and an index, and a catalog file at the top of the share. Albums, events and Private are ordinary folders too, so the library stays readable without the app.</p>
+                </details>
+            </div>
+
+            <div class="section">
+                <h2>Using the app</h2>
+
+                <details>
+                    <summary>Albums, events and tags</summary>
+                    <p>Select photos and choose <strong>Move to…</strong> to put them in an album (a collection) or an event, or to create a new one. Albums can hold other albums. You can also give a photo a title, tags and a rating; these are saved in a small sidecar file next to the photo, and the original is never rewritten.</p>
+                </details>
+
+                <details>
+                    <summary>Private photos</summary>
+                    <p>Photos you move to <strong>Private</strong> are shown on iPhone and iPad only after Face ID, Touch ID or the device passcode, and stay unlocked for 30 minutes or until you quit the app. Private photos are never shown on Apple TV. Private is a folder on your NAS: to keep other people out of it, set its permissions on the NAS as well.</p>
+                </details>
+
+                <details>
+                    <summary>Deleting and getting photos back</summary>
+                    <p>Deleted photos are moved to <strong>Trash</strong> on the NAS and can be restored for 30 days. Deleting in PhotoLens only affects the NAS, never the Photos app or iCloud Photos.</p>
+                </details>
+
+                <details>
+                    <summary>Slideshows</summary>
+                    <p>Start a slideshow from the play button on iPhone and iPad, or with Play/Pause on the Apple TV remote. Time per photo, shuffle and the Ken Burns effect are in Settings.</p>
+                </details>
+
+                <details>
+                    <summary>Editing on Apple TV</summary>
+                    <p>Hold Select on a photo to move or delete it, and on an event to rename it. This needs an account with write access to the share; if the account can only read, the menus are hidden.</p>
+                </details>
+
+                <details>
+                    <summary>Signing out on every device</summary>
+                    <p>Settings › <strong>Sign Out on All Devices…</strong> on iPhone or iPad removes the saved NAS account from this device and from the other devices on your Apple Account. Your photos on the NAS are not affected. Sign in again on one device and the others connect by themselves.</p>
+                </details>
+            </div>
+
+            <div class="section">
+                <h2>Troubleshooting</h2>
+
+                <details>
+                    <summary>PhotoLens cannot connect to my NAS</summary>
+                    <ul>
+                        <li>Check that the device is on the same network as the NAS, or that your VPN is on.</li>
+                        <li>On iPhone and iPad, open Settings › Privacy &amp; Security › Local Network and make sure PhotoLens is allowed.</li>
+                        <li>Check that SMB is turned on in the NAS's file services and that SMB 3 is allowed.</li>
+                        <li>Check the share name, user name and password, and that the account may read and write the share.</li>
+                    </ul>
+                </details>
+
+                <details>
+                    <summary>Is the connection encrypted?</summary>
+                    <p>PhotoLens asks the NAS for SMB 3 encryption and uses it when the NAS offers it. If the NAS does not, the connection falls back to SMB without transport encryption. Turn on SMB 3 encryption in the NAS's settings to make sure it is used, or use a VPN.</p>
+                </details>
+
+                <details>
+                    <summary>Backup stops when I leave the app</summary>
+                    <p>iOS decides how long an app may work in the background, and usually prefers moments when the device is charging and on Wi-Fi. A large first backup goes fastest with PhotoLens open and the device plugged in. It continues where it stopped.</p>
+                </details>
+
+                <details>
+                    <summary>PhotoLens cannot see my photos</summary>
+                    <p>Backup needs access to the Photos library. Open the Settings app, find PhotoLens, tap Photos and choose Full Access to back up the whole library. PhotoLens only reads the library.</p>
+                </details>
+
+                <details>
+                    <summary>Thumbnails look wrong or the app uses a lot of space</summary>
+                    <p>Settings › Storage › <strong>Clear Cache</strong> removes the thumbnails saved on the device. They download again as you browse. Photos on the NAS are not affected.</p>
+                </details>
+
+                <details>
+                    <summary>Apple TV shows the connect screen instead of my library</summary>
+                    <p>Check that the Apple TV is signed in to the same Apple Account with iCloud as your iPhone, and that it is on the same network as the NAS. If it still does not connect, choose <strong>Set Up Manually</strong>.</p>
+                </details>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 PhotoLens &middot; <a href="privacy.html">Privacy Policy</a> &middot; <a href="sv.html" lang="sv">Svenska</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>
