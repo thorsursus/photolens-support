@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PhotoLens — Support</title>
-    <meta name="description" content="Hjälp och support för PhotoLens, appen som visar och säkerhetskopierar dina bilder till din egen NAS, på iPhone, iPad och Apple TV.">
+    <meta name="description" content="Hjälp och support för PhotoLens, appen som visar och säkerhetskopierar dina bilder till din egen NAS, på iPhone, iPad, Mac och Apple TV.">
     <link rel="icon" href="app-icon.png">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -29,7 +29,7 @@
         <div class="container">
             <div class="section">
                 <h2>Kontakt</h2>
-                <p>Fungerar något inte, eller har du en fråga om appen? Skriv till oss och berätta vilken enhet du använder (iPhone, iPad eller Apple TV), vilken systemversion den har och vilken sorts NAS du har.</p>
+                <p>Fungerar något inte, eller har du en fråga om appen? Skriv till oss och berätta vilken enhet du använder (iPhone, iPad, Mac eller Apple TV), vilken systemversion den har och vilken sorts NAS du har.</p>
                 <a href="mailto:thorsursus@icloud.com?subject=PhotoLens%20support" class="contact-link">thorsursus@icloud.com</a>
                 <p style="margin-top: 14px;">Du kan också skapa ett ärende på <a href="https://github.com/thorsursus/photolens-support/issues">github.com/thorsursus/photolens-support</a>.</p>
                 <p>Appens gränssnitt är på engelska. Knappar och menyer nedan skrivs därför som de heter i appen.</p>
@@ -37,7 +37,7 @@
 
             <div class="section">
                 <h2>Om PhotoLens</h2>
-                <p>PhotoLens visar bildbiblioteket på din egen NAS på iPhone, iPad och Apple TV, och säkerhetskopierar bilderna och videorna på din iPhone eller iPad till NAS:en. Bilderna sparas som vanliga filer i datummappar på en utdelad mapp som du själv råder över. Det finns inget PhotoLens-konto, ingen prenumeration och ingen server hos oss emellan.</p>
+                <p>PhotoLens visar bildbiblioteket på din egen NAS på iPhone, iPad, Mac och Apple TV, och säkerhetskopierar bilderna och videorna på din iPhone, iPad eller Mac till NAS:en. Bilderna sparas som vanliga filer i datummappar på en utdelad mapp som du själv råder över. Det finns inget PhotoLens-konto, ingen prenumeration och ingen server hos oss emellan.</p>
                 <p>Du kan titta runt först utan NAS: tryck på <strong>Explore Demo Library</strong> på välkomstskärmen, så öppnas ett exempelbibliotek som ligger på enheten.</p>
             </div>
 
@@ -45,7 +45,7 @@
                 <h2>Det här behöver du</h2>
                 <ul>
                     <li>En NAS (eller en dator) som delar ut en mapp över <strong>SMB 3</strong>, med ett användarnamn och lösenord som får läsa och skriva i mappen.</li>
-                    <li>En iPhone eller iPad med iOS 17 eller senare, eller en Apple TV med tvOS 17 eller senare.</li>
+                    <li>En iPhone eller iPad med iOS 17 eller senare, en Mac med macOS 14 eller senare, eller en Apple TV med tvOS 17 eller senare.</li>
                     <li>Enheten på samma nätverk som NAS:en. För att nå NAS:en när du inte är hemma använder du en VPN till hemnätverket, till exempel Tailscale, och ansluter till NAS:ens adress i VPN:et.</li>
                 </ul>
             </div>
@@ -67,6 +67,12 @@
                         <li><strong>Username</strong> och <strong>Password</strong>: ett konto på NAS:en som får läsa och skriva i mappen.</li>
                     </ul>
                     <p>Första gången frågar iOS om appen får hitta enheter på ditt lokala nätverk. PhotoLens behöver det för att nå NAS:en.</p>
+                </details>
+
+                <details>
+                    <summary>Hur ställer jag in PhotoLens på en Mac?</summary>
+                    <p>Välj <strong>Connect Your NAS</strong> i inställningsfönstret. Välj din NAS bland filservrarna som hittas på hemnätverket, eller skriv in dess adress, logga sedan in med ett konto på NAS:en och välj den utdelade mappen. Du kan lägga till en andra adress för att nå NAS:en utifrån via din VPN. Första gången frågar macOS om lov att hitta enheter på det lokala nätverket.</p>
+                    <p><strong>File › Import Photos and Videos…</strong> tar in mappar med bilder som album. <strong>Explore Demo Library</strong> finns i inställningsfönstret, och <strong>Leave Demo Library</strong> under Settings. Settings › <strong>Pair Apple TV</strong> skickar anslutningen till en Apple TV när du har skrivit in koden den visar.</p>
                 </details>
 
                 <details>

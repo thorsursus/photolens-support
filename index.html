@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PhotoLens — Support</title>
-    <meta name="description" content="Help and support for PhotoLens, the photo library and backup app for your own NAS, on iPhone, iPad and Apple TV.">
+    <meta name="description" content="Help and support for PhotoLens, the photo library and backup app for your own NAS, on iPhone, iPad, Mac and Apple TV.">
     <link rel="icon" href="app-icon.png">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -29,14 +29,14 @@
         <div class="container">
             <div class="section">
                 <h2>Get in touch</h2>
-                <p>Something not working, or a question about the app? Write to us and say which device you use (iPhone, iPad or Apple TV), its system version, and what kind of NAS you have.</p>
+                <p>Something not working, or a question about the app? Write to us and say which device you use (iPhone, iPad, Mac or Apple TV), its system version, and what kind of NAS you have.</p>
                 <a href="mailto:thorsursus@icloud.com?subject=PhotoLens%20support" class="contact-link">thorsursus@icloud.com</a>
                 <p style="margin-top: 14px;">You can also open an issue at <a href="https://github.com/thorsursus/photolens-support/issues">github.com/thorsursus/photolens-support</a>.</p>
             </div>
 
             <div class="section">
                 <h2>About PhotoLens</h2>
-                <p>PhotoLens shows the photo library on your own NAS on iPhone, iPad and Apple TV, and backs up the photos and videos on your iPhone or iPad to that NAS. Your photos are stored as ordinary files in dated folders on a share you control. There is no PhotoLens account, no subscription and no server of ours in between.</p>
+                <p>PhotoLens shows the photo library on your own NAS on iPhone, iPad, Mac and Apple TV, and backs up the photos and videos on your iPhone, iPad or Mac to that NAS. Your photos are stored as ordinary files in dated folders on a share you control. There is no PhotoLens account, no subscription and no server of ours in between.</p>
                 <p>You can look around first without a NAS: tap <strong>Explore Demo Library</strong> on the welcome screen to open a sample library that is stored on the device.</p>
             </div>
 
@@ -44,7 +44,7 @@
                 <h2>What you need</h2>
                 <ul>
                     <li>A NAS (or a computer) that shares a folder over <strong>SMB 3</strong>, with a user name and password that can read and write the share.</li>
-                    <li>An iPhone or iPad with iOS 17 or later, or an Apple TV with tvOS 17 or later.</li>
+                    <li>An iPhone or iPad with iOS 17 or later, a Mac with macOS 14 or later, or an Apple TV with tvOS 17 or later.</li>
                     <li>The device on the same network as the NAS. To reach the NAS away from home, use a VPN to your home network, for example Tailscale, and connect to the NAS's address on the VPN.</li>
                 </ul>
             </div>
@@ -66,6 +66,12 @@
                         <li><strong>Username</strong> and <strong>Password</strong>: an account on the NAS that may read and write the share.</li>
                     </ul>
                     <p>The first time, iOS asks for permission to find devices on your local network. PhotoLens needs it to reach the NAS.</p>
+                </details>
+
+                <details>
+                    <summary>How do I set up PhotoLens on a Mac?</summary>
+                    <p>In the setup window, choose <strong>Connect Your NAS</strong>. Pick your NAS from the file servers found on your home network, or type its address, then sign in with an account on the NAS and choose the shared folder. You can add a second address for reaching the NAS away from home through your VPN. The first time, macOS asks for permission to find devices on your local network.</p>
+                    <p><strong>File › Import Photos and Videos…</strong> brings in folders of photos as albums. <strong>Explore Demo Library</strong> is in the setup window, and <strong>Leave Demo Library</strong> in Settings. Settings › <strong>Pair Apple TV</strong> sends the connection to an Apple TV after you type the code it shows.</p>
                 </details>
 
                 <details>
